@@ -1,424 +1,516 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="文档记录">
+<meta property="og:type" content="website">
+<meta property="og:title" content="慕米视界">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="慕米视界">
+<meta property="og:description" content="文档记录">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="慕旭东">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+
+
+<title >慕米视界</title>
+
+<!-- Favicon -->
+
+    <link href='/img/favicon.svg?v=2.1.1' rel='icon' type='image/png' sizes='16x16' ></link>
+
+
+    <link href='/img/favicon.svg?v=2.1.1' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+
+
+<!-- Plugin -->
+
+
+
+
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
 
-  
-  
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"慕旭东","root":"/","typed_text":null,"theme_version":"2.1.1","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":"/img/favicon.svg","icon16":"/img/favicon.svg","icon32":"/img/favicon.svg","appleTouchIcon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","showText":"(/≧▽≦/)咦！又好了！","hideText":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":true,"postUpdate":"2023-09-23 14:19:41"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.1" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+ 
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
     </div>
-  </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+        <img alt="logo" src="/img/favicon.svg">
+    
+    
+        <div class="trm-logo-text">
+            Async<span>Theme</span>
+        </div>
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children current-menu-item">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
 </header>
+            <!-- top bar end -->
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-kubernetes技巧及知识系统" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/23/kubernetes%E6%8A%80%E5%B7%A7%E5%8F%8A%E7%9F%A5%E8%AF%86%E7%B3%BB%E7%BB%9F/" class="article-date">
-  <time class="dt-published" datetime="2023-09-23T05:24:35.285Z" itemprop="datePublished">2023-09-23</time>
-</a>
+            <!-- body -->
+            <div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
     
-  </div>
-  <div class="article-inner">
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/img/banner.png">
+    <!-- banner cover end -->
     
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            Hi my new friend!
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            树深时见鹿，<br>溪午不闻钟。
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        index.html
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="trm-page-sidebar col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card"> 
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img alt="Avatar" class="trm-avatar" src="/img/avatar.jpg">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        ThemeAsync
+    </h5>
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="系统知识总结"><a href="#系统知识总结" class="headerlink" title="系统知识总结"></a>系统知识总结</h2><p><a target="_blank" rel="noopener" href="https://docs.openstack.org/queens/index.html">https://docs.openstack.org/queens/index.html</a></p>
-<h3 id="启用-shell-自动补全功能"><a href="#启用-shell-自动补全功能" class="headerlink" title="启用 shell 自动补全功能"></a>启用 shell 自动补全功能</h3><p>kubectl 的 Bash 补全脚本可以用命令 <code>kubectl completion bash</code> 生成。</p>
-<p>安装 <code>bash-completion</code></p>
-<p><code>yum install bash-completion -y</code></p>
-<p>验证：<code>type _init_completion</code></p>
-<p>启动 kubectl 自动补全功能 ：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;source &lt;(kubectl completion bash)&#x27; &gt;&gt;~/.bashrc</span><br><span class="line">或者：</span><br><span class="line">kubectl completion bash &gt;/etc/bash_completion.d/kubectl</span><br></pre></td></tr></table></figure>
+</div>
+<!-- card header end -->
+        <!-- sidebar social -->
 
-<h3 id="查看资源规范"><a href="#查看资源规范" class="headerlink" title="查看资源规范"></a>查看资源规范</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">查看资源名称</span></span><br><span class="line">[root@master ~]# kubectl api-resources </span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">输出请求资源或字段的规范</span></span><br><span class="line">[root@master ~]# kubectl explain deploy.spec --recursive</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<div class="trm-social">
+    
+        <a href="https://github.com" title="Github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+</div>
 
-<h3 id="HPA"><a href="#HPA" class="headerlink" title="HPA"></a>HPA</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#命令格式</span></span><br><span class="line"><span class="comment"># kubectl autoscale (-f FILENAME | TYPE NAME | TYPE/NAME) [--min=MINPODS] --max=MAXPODS [--cpu-percent=CPU] [options]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="LimitRange-默认资源限制设置"><a href="#LimitRange-默认资源限制设置" class="headerlink" title="LimitRange 默认资源限制设置"></a>LimitRange 默认资源限制设置</h3><p>创建命名空间constraints-cpu-example，在master节点&#x2F;root目录下编写yaml文件cpu-constraints.yaml，具体要求如下：</p>
-<p>（1）LimitRange名称：cpu-min-max-demo；</p>
-<p>（2）命名空间：constraints-cpu-example；</p>
-<p>（3）设置容器最小分配200m CPU，最大分配800m CPU。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">LimitRange</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">cpu-min-max-demo</span></span><br><span class="line">  <span class="attr">namespace:</span> <span class="string">constraints-cpu-example</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">limits:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">max:</span></span><br><span class="line">      <span class="attr">cpu:</span> <span class="string">&quot;800m&quot;</span></span><br><span class="line">      <span class="attr">memory:</span> <span class="string">&quot;4Mi&quot;</span></span><br><span class="line">    <span class="attr">min:</span></span><br><span class="line">      <span class="attr">cpu:</span> <span class="string">&quot;200m&quot;</span></span><br><span class="line">    <span class="comment">#取值可为Container或者Pod</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">Container</span></span><br><span class="line"><span class="comment"># kubectl explain LimitRange.spec.limits    </span></span><br></pre></td></tr></table></figure>
-
-<h3 id="ResourceQuota-资源配额"><a href="#ResourceQuota-资源配额" class="headerlink" title="ResourceQuota 资源配额"></a>ResourceQuota 资源配额</h3><p> 资源配额可以对整个命名空间所能够使用的资源总额度进行限制（CPU、内存等计算资源、kubernetes中的资源对象）</p>
-<p>创建命名空间quota-example，在master节点&#x2F;root目录下编写yaml文件quota.yaml，具体要求如下：</p>
-<p>（1）ResourceQuota名称：compute-resources；</p>
-<p>（2）命名空间：quota-example；</p>
-<p>（3）命名空间内所有Pod数量不超过4；</p>
-<p>（4）命名空间内所有容器内存申请总和不得超过1G；</p>
-<p>（5）命名空间内所有内存限制不得超过2G；</p>
-<p>（6）命名空间内所有容器申请的CPU不得超过1；</p>
-<p>（7）命名空间内所有容器限制的CPU不得超过2。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span> </span><br><span class="line"><span class="attr">kind:</span> <span class="string">ResourceQuota</span> </span><br><span class="line"><span class="attr">metadata:</span> </span><br><span class="line">  <span class="attr">name:</span> <span class="string">compute-resources</span></span><br><span class="line">  <span class="attr">namespace:</span> <span class="string">quota-example</span> </span><br><span class="line"><span class="attr">spec:</span> </span><br><span class="line">  <span class="attr">hard:</span> </span><br><span class="line">    <span class="attr">pods:</span> <span class="string">&quot;4&quot;</span> </span><br><span class="line">    <span class="attr">requests.cpu:</span> <span class="string">&quot;1&quot;</span> </span><br><span class="line">    <span class="attr">requests.memory:</span> <span class="string">1Gi</span> </span><br><span class="line">    <span class="attr">limits.cpu:</span> <span class="string">&quot;2&quot;</span> </span><br><span class="line">    <span class="attr">limits.memory:</span> <span class="string">2Gi</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">官网：https://kubernetes.io/zh/docs/concepts/policy/resource-quotas/</span></span><br></pre></td></tr></table></figure>
-
-<p>计算资源配额</p>
-<p>配额机制所支持的资源类型：</p>
-<table>
-<thead>
-<tr>
-<th>资源名称</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>limits.cpu</code></td>
-<td>所有非终止状态的 Pod，其 CPU 限额总量不能超过该值。</td>
-</tr>
-<tr>
-<td><code>limits.memory</code></td>
-<td>所有非终止状态的 Pod，其内存限额总量不能超过该值。</td>
-</tr>
-<tr>
-<td><code>requests.cpu</code></td>
-<td>所有非终止状态的 Pod，其 CPU 需求总量不能超过该值。</td>
-</tr>
-<tr>
-<td><code>requests.memory</code></td>
-<td>所有非终止状态的 Pod，其内存需求总量不能超过该值。</td>
-</tr>
-<tr>
-<td><code>hugepages-&lt;size&gt;</code></td>
-<td>对于所有非终止状态的 Pod，针对指定尺寸的巨页请求总数不能超过此值。</td>
-</tr>
-<tr>
-<td><code>cpu</code></td>
-<td>与 <code>requests.cpu</code> 相同。</td>
-</tr>
-<tr>
-<td><code>memory</code></td>
-<td>与 <code>requests.memory</code> 相同。</td>
-</tr>
-</tbody></table>
-<h3 id="Requests-and-Limits"><a href="#Requests-and-Limits" class="headerlink" title="Requests and Limits"></a>Requests and Limits</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Pod 中的资源限制也主要是针对 cpu 和 内存。与 docker 不同的是，它提供了 requests 和 limits 两个设置。具体的含义为：</span><br><span class="line"></span><br><span class="line">requests：pod 运行所需要的最少资源。例如 kubernetes 在调度 pod 时，就是以这个设置来挑选 node。</span><br><span class="line">limits：pod 运行的资源上限。也就说，超过这个 limits，pod 会被 <span class="built_in">kill</span> 掉。</span><br><span class="line">注意，limits 的数值不能小于 requests，否则 Pod 会启动失败。</span><br><span class="line">apiVersion: v1</span><br><span class="line">kind: Pod</span><br><span class="line">metadata:</span><br><span class="line">  name: wp</span><br><span class="line">spec:</span><br><span class="line">  containers:</span><br><span class="line">    - name: wp</span><br><span class="line">      image: wordpress</span><br><span class="line">      resources:</span><br><span class="line">        requests:</span><br><span class="line">          memory: <span class="string">&#x27;64Mi&#x27;</span></span><br><span class="line">          cpu: <span class="string">&#x27;250m&#x27;</span></span><br><span class="line">        limits:</span><br><span class="line">          memory: <span class="string">&#x27;128Mi&#x27;</span></span><br><span class="line">          cpu: <span class="string">&#x27;500m&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>注： cpu 仅支持数字（如：1）或者 milli CPU（如：500m） 这样的写法。其中 500m &#x3D; 0.5(核)，且这两个数值都是绝对数值，即无论是在 2 核的主机还是 10 核的主机上，Pod 都只占用 0.5 个核心，而不是所有核心数量的一半。</p>
-<p>内存分配有很多单位，我们常用的有 KB，MB，GB 等，注意在这里我们的单位是 Ki，Mi，Gi。1Mi &#x3D; 1024 x 1024，而 1M &#x3D; 1000 x 1000，其他单位以此类推。具体有哪些可用在使用时查看官方文档即可。</p>
-<h3 id="Qos"><a href="#Qos" class="headerlink" title="Qos"></a>Qos</h3><p>Qos 全称是 Quality of Service，服务质量的意思。熟悉计算机网络的同学应该也看到过 Qos 的概念，K8S 里的 Qos 名称一致，但是表示的具体内容不同。</p>
-<p>K8S 的 Qos 具体分为以下几类：</p>
-<ul>
-<li><code>Guaranteed</code>: requests &#x3D; limits ，二者是一样的值。高优先级，Kubernetes 保证只要 Pod 资源使用不超过 limits 就不会被 kill 掉。</li>
-<li><code>Burstable</code>: requests &lt; limits，Pod 可以使用 requests 到 limits 之间数量的资源，中优先级。但是当机器资源紧张的时候，如果这些 Pod 对资源的使用超过了 requests，在没有 BestEffort 的 pod 的情况下就很有可能会被 kill 掉。</li>
-<li><code>BestEffort</code>: 没有设置具体的 requests 和 limits。低优先级，如果节点资源紧张，这些 Pod 会优先被 kill 掉。</li>
+<!-- sidebar social end -->
+        <!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                Residence:
+            </div>
+            <div class="trm-label trm-label-light">
+                Mars
+            </div>
+        </li>
+    
 </ul>
-<p>由此可见，K8S 的 Qos 其实是类似于 Linux 中进程 priority 的一个概念，通过 requests 值和 limits 值的设置，让用户自己选择去将其应用划分为不同的优先级。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">apiVersion: v1</span><br><span class="line">kind: Pod</span><br><span class="line">metadata:</span><br><span class="line">  name: qos-demo</span><br><span class="line">spec:</span><br><span class="line">  containers:</span><br><span class="line">    - name: qos-demo-ctr</span><br><span class="line">      image: nginx</span><br><span class="line">      resources:</span><br><span class="line">        limits:</span><br><span class="line">          memory: <span class="string">&#x27;200Mi&#x27;</span></span><br><span class="line">          cpu: <span class="string">&#x27;700m&#x27;</span></span><br><span class="line">        requests:</span><br><span class="line">          memory: <span class="string">&#x27;200Mi&#x27;</span></span><br><span class="line">          cpu: <span class="string">&#x27;700m&#x27;</span></span><br><span class="line"><span class="comment">#这个示例中，requests = limits，创建后可以看到其 Qos Class 是 Guaranteed。</span></span><br><span class="line">apiVersion: v1</span><br><span class="line">kind: Pod</span><br><span class="line">metadata:</span><br><span class="line">  name: qos-demo-2</span><br><span class="line">spec:</span><br><span class="line">  containers:</span><br><span class="line">    - name: qos-demo-3-ctr</span><br><span class="line">      image: nginx</span><br><span class="line"><span class="comment">#可以看到其 QosClass 为 BestEffort，当资源不足时这个 Pod 会被优先杀死。</span></span><br></pre></td></tr></table></figure>
+<!-- info end -->
 
-
-
-<h3 id="健康检查"><a href="#健康检查" class="headerlink" title="健康检查"></a>健康检查</h3><p>在基础的健康检查的概念之上，kubernetes 提供了更加精细的概念。分别是存活性检查和可用性检查，分别介绍如下：</p>
-<ul>
-<li><code>存活性检查</code>（liveness probe): 用于判断容器是否需要重启</li>
-<li><code>可用性检查</code> （readiness probe): 用于判定容器是否可以正常提供服务。</li>
-</ul>
-<p>因为在一般的应用场景下，都会用负载均衡后面挂上多个实例来达到分担流量以及稳定性保障的目的。可用性检查就是用来保证这个 Pod 是否可以提供服务，并被挂载在负载均衡后面。</p>
-<p>一般的应用不会有这么精细的区分，这时候存活性检查和可用性检查用同样的配置即可。</p>
-<p>通常来讲，应用对外提供服务都是通过 tcp 端口或者 http 端口，比如 Nginx 提供 http 服务，Redis 通过 6379 端口提供服务。对于这样的服务，我们可以通过检查其端口是否开启，http endpoint 是否可以访问来判断其健康状态。</p>
-<p>有的服务只提供集群内部访问，不需要对提供对外的网络端口，这时候可以通过 <code>exec</code> 命令进去 Pod 之后执行相应的命令来检查。kuberentes 提供了对这几种方式的支持，通过 pod 所在节点的 kubelet 组件来执行这些检查，下面我们可以逐一实验。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Pod</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">labels:</span></span><br><span class="line">    <span class="attr">test:</span> <span class="string">liveness</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">liveness-exec</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">containers:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">liveness</span></span><br><span class="line">      <span class="attr">image:</span> <span class="string">busybox</span></span><br><span class="line">      <span class="attr">args:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">/bin/sh</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">-c</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">touch</span> <span class="string">/tmp/healthy;</span> <span class="string">sleep</span> <span class="number">30</span><span class="string">;</span> <span class="string">rm</span> <span class="string">-rf</span> <span class="string">/tmp/healthy;</span> <span class="string">sleep</span> <span class="number">600</span></span><br><span class="line">      <span class="attr">livenessProbe:</span></span><br><span class="line">        <span class="attr">exec:</span></span><br><span class="line">          <span class="attr">command:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">cat</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">/tmp/healthy</span></span><br><span class="line">        <span class="attr">initialDelaySeconds:</span> <span class="number">5</span></span><br><span class="line">        <span class="attr">periodSeconds:</span> <span class="number">5</span></span><br></pre></td></tr></table></figure>
-
-<p>注意：</p>
-<ol>
-<li>例子中为了演示，让 command 不断地创建删除文件，健康检查去检查这个文件。</li>
-<li>这个例子中只配置了 livenessProbe。</li>
-<li>command: 就是健康检查执行的命令。如果执行结果状态码为 0，就认为通过，其它的认为失败。</li>
-<li>periodSecounds: command 执行的间隔，健康检查是一个持续性的过程，需要反复执行。</li>
-<li>initialDelaySeconds：因为好多程序启动时有初始化时间。比如 java 程序，初始化一般就比较慢。这时候如果立马做健康检查就不太合适，initialDelaySeconds 就是设置了一个合理的时间，等过了这个时间再做检查。</li>
-</ol>
-<p>在这个例子中，容器启动后，创建 <code>/tmp/healthy</code> 这个文件。30 秒内，健康检查是 ok 的，之后文件被删，健康检查就会出问题了。</p>
-<p>http 检查即是通过调用 http 服务的某个路径，然后根据错误码来判定。 http status code 的 200-400 代表成功，其它代表失败。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Pod</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">labels:</span></span><br><span class="line">    <span class="attr">test:</span> <span class="string">liveness</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">liveness-http</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">containers:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">liveness</span></span><br><span class="line">      <span class="attr">image:</span> <span class="string">cnych/liveness</span></span><br><span class="line">      <span class="attr">args:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">/server</span></span><br><span class="line">      <span class="attr">livenessProbe:</span></span><br><span class="line">        <span class="attr">httpGet:</span></span><br><span class="line">          <span class="attr">path:</span> <span class="string">/healthz</span></span><br><span class="line">          <span class="attr">port:</span> <span class="number">8080</span></span><br><span class="line">          <span class="attr">httpHeaders:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">X-Custom-Header</span></span><br><span class="line">              <span class="attr">value:</span> <span class="string">Awesome</span></span><br><span class="line">        <span class="attr">initialDelaySeconds:</span> <span class="number">3</span></span><br><span class="line">        <span class="attr">periodSeconds:</span> <span class="number">3</span></span><br></pre></td></tr></table></figure>
-
-<p>依然是 livenessProbe:</p>
-<ul>
-<li>httpGet: 表示这是一个 http 类型的健康检查</li>
-<li>path: http 的路径</li>
-<li>httpHeaders: 发送请求所带的 headers 字段，不同的场景可能有不能的需求。</li>
-</ul>
-<p>这个镜像里，我们依然动态修改了返回结果，用来演示 healtcheck 的不同效果。</p>
-<p>对于监听 tcp 端口的服务，我们可以尝试与这个端口建立连接。如果成功，则认为服务正常。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Pod</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">goproxy</span></span><br><span class="line">  <span class="attr">labels:</span></span><br><span class="line">    <span class="attr">app:</span> <span class="string">goproxy</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">containers:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">goproxy</span></span><br><span class="line">      <span class="attr">image:</span> <span class="string">googlecontainer/goproxy:0.1</span></span><br><span class="line">      <span class="attr">ports:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">containerPort:</span> <span class="number">8080</span></span><br><span class="line">      <span class="attr">readinessProbe:</span></span><br><span class="line">        <span class="attr">tcpSocket:</span></span><br><span class="line">          <span class="attr">port:</span> <span class="number">8080</span></span><br><span class="line">        <span class="attr">initialDelaySeconds:</span> <span class="number">5</span></span><br><span class="line">        <span class="attr">periodSeconds:</span> <span class="number">10</span></span><br><span class="line">      <span class="attr">livenessProbe:</span></span><br><span class="line">        <span class="attr">tcpSocket:</span></span><br><span class="line">          <span class="attr">port:</span> <span class="number">8080</span></span><br><span class="line">        <span class="attr">initialDelaySeconds:</span> <span class="number">15</span></span><br><span class="line">        <span class="attr">periodSeconds:</span> <span class="number">20</span></span><br></pre></td></tr></table></figure>
-
-<p>刚才我们的例子中都是单容器的 pod，也是最常用的。在某些情况下，多容器的 Pod 更能适应需求。这样的模式通常是一个容器用来主要提供服务，另一个做一些其他的零碎工作。比如：</p>
-<ol>
-<li>收集日志。这样不用修改原来的服务，可以用另外的容器来适配各种日志收集系统。</li>
-<li>做 Proxy。比如我们的程序需要访问外部的服务，可以固定配置为 localhost，由其他的容器来决定如何转发请求，相当于将动态配置的需求交由其他的容器来做。</li>
-</ol>
-<p>综合来讲，这样做的好处就是让主要的服务容器不做修改，就能更好地适配各种系统。另外，也能较好地做到职责分离，不需要由一个容器来处理过多的任务。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#这个例子中我们使用了 volume，docker 中也有这个概念，二者是类似的。 Pod 中的 volume 是各个容器共享的，我们可以用它来让各个容器交互。在这个例子中，debian-container 往 /pod-data/ 里面写入了一个文件，而这个目录是两个 container 共享的 volume，nginx 将其挂载到其配置的目录。</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Pod</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">two-containers</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">restartPolicy:</span> <span class="string">Never</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">volumes:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">shared-data</span></span><br><span class="line">      <span class="attr">emptyDir:</span> &#123;&#125;</span><br><span class="line"></span><br><span class="line">  <span class="attr">containers:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">nginx-container</span></span><br><span class="line">      <span class="attr">image:</span> <span class="string">nginx</span></span><br><span class="line">      <span class="attr">volumeMounts:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">shared-data</span></span><br><span class="line">          <span class="attr">mountPath:</span> <span class="string">/usr/share/nginx/html</span></span><br><span class="line"></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">debian-container</span></span><br><span class="line">      <span class="attr">image:</span> <span class="string">debian</span></span><br><span class="line">      <span class="attr">volumeMounts:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">shared-data</span></span><br><span class="line">          <span class="attr">mountPath:</span> <span class="string">/pod-data</span></span><br><span class="line">      <span class="attr">command:</span> [<span class="string">&#x27;/bin/sh&#x27;</span>]</span><br><span class="line">      <span class="attr">args:</span></span><br><span class="line">        [<span class="string">&#x27;-c&#x27;</span>, <span class="string">&#x27;echo Hello from the debian container &gt; /pod-data/index.html&#x27;</span>]</span><br></pre></td></tr></table></figure>
-
-<p>initContainers 是 Pod 提供的另外一个非常有用的功能。它的结构与普通的 container 类似，但是作用上有很大的区别：</p>
-<ul>
-<li>它们是短期运行的程序，不是持久运行的进程。</li>
-<li>顺序执行，并且每一个 initContainer 必须等待前一个执行成功才能继续执行。正常的 container 必须等待前面的 initContianer 都执行完成之后才能开始执行。</li>
-</ul>
-<p>那么它的用处在哪呢？想象一下以下的业务场景：</p>
-<ul>
-<li>程序在运行前需要等待某个条件才能执行。比如服务 A 需要等待服务 B 可用时才能开始运行</li>
-<li>程序需要某些动态的配置信息生成之后才能正常运行</li>
-<li>程序需要同步好某些数据之后才能正常运行，比如 mysql-slave</li>
-</ul>
-<p>综合来讲，就是说某个服务的运行，需要一些如服务依赖、文件等前置条件才能正常运行。在没有 initContainers 的情况下，我们需要在正常的 container 里做一些 hack 才能做到，这样不好维护并且比较复杂。有了 initContainers，不管是结构上还是可维护性上都会好很多。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Pod</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">init-ctr-demo</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">volumes:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">data</span></span><br><span class="line">      <span class="attr">emptyDir:</span> &#123;&#125;</span><br><span class="line">  <span class="attr">initContainers:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">init-1</span></span><br><span class="line">      <span class="attr">image:</span> <span class="string">busybox</span></span><br><span class="line">      <span class="attr">command:</span> [<span class="string">&#x27;sh&#x27;</span>, <span class="string">&#x27;-c&#x27;</span>, <span class="string">&#x27;echo start 1 &gt;&gt; /data/file&#x27;</span>]</span><br><span class="line">      <span class="attr">volumeMounts:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">data</span></span><br><span class="line">          <span class="attr">mountPath:</span> <span class="string">/data</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">init-2</span></span><br><span class="line">      <span class="attr">image:</span> <span class="string">busybox</span></span><br><span class="line">      <span class="attr">command:</span> [<span class="string">&#x27;sh&#x27;</span>, <span class="string">&#x27;-c&#x27;</span>, <span class="string">&#x27;echo start 2 &gt;&gt; /data/file&#x27;</span>]</span><br><span class="line">      <span class="attr">volumeMounts:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">data</span></span><br><span class="line">          <span class="attr">mountPath:</span> <span class="string">/data</span></span><br><span class="line">  <span class="attr">containers:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">busybox</span></span><br><span class="line">      <span class="attr">image:</span> <span class="string">busybox</span></span><br><span class="line">      <span class="attr">command:</span> [<span class="string">&#x27;sh&#x27;</span>, <span class="string">&#x27;-c&#x27;</span>, <span class="string">&#x27;sleep 1000&#x27;</span>]</span><br><span class="line">      <span class="attr">volumeMounts:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">data</span></span><br><span class="line">          <span class="attr">mountPath:</span> <span class="string">/data</span></span><br></pre></td></tr></table></figure>
-
-
-      
+        
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/23/kubernetes%E6%8A%80%E5%B7%A7%E5%8F%8A%E7%9F%A5%E8%AF%86%E7%B3%BB%E7%BB%9F/" data-id="clmvl6het0000zd2adkqm4dis" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="trm-page-content col-lg-8">
+                <div id="trm-content" class="trm-content">
+                    <!-- categories -->
 
-
-
-  
-    <article id="post-慕旭东" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/23/%E6%85%95%E6%97%AD%E4%B8%9C/" class="article-date">
-  <time class="dt-published" datetime="2023-09-23T04:58:01.000Z" itemprop="datePublished">2023-09-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <div class="row hidden-sm">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/09/23/%E6%85%95%E6%97%AD%E4%B8%9C/">慕旭东</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>###test</p>
-
-      
+        
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/23/%E6%85%95%E6%97%AD%E4%B8%9C/" data-id="clmvl1co30001x82a8wua6crt" data-title="慕旭东" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
+<!-- categories end -->
 
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/23/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-09-23T04:04:39.398Z" itemprop="datePublished">2023-09-23</time>
-</a>
+<!-- newest publications -->
+<div class="row">
     
-  </div>
-  <div class="article-inner">
+        <div class="col-lg-12">
+            <!-- title -->
+            <h5 class="trm-title-with-divider">
+                最近发布 
+                <span data-number="01"></span>
+            </h5>
+        </div>
     
     
-      <header class="article-header">
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2023/09/23/kubernetes%E6%8A%80%E5%B7%A7%E5%8F%8A%E7%9F%A5%E8%AF%86%E7%B3%BB%E7%BB%9F/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+            
+        </a>
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/09/23/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    未分类
+                </a>
+            </div>
+            <h5>
+                <a href="/2023/09/23/kubernetes%E6%8A%80%E5%B7%A7%E5%8F%8A%E7%9F%A5%E8%AF%86%E7%B3%BB%E7%BB%9F/" class="trm-anima-link">
+                    
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>23/09/23</li>
+                <li>13:24</li>
+                
+                
+            </ul>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/23/hello-world/" data-id="clmvl1co00000x82a1sjs4g1u" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
+</div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2023/09/23/%E6%85%95%E6%97%AD%E4%B8%9C/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+            
+        </a>
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    未分类
+                </a>
+            </div>
+            <h5>
+                <a href="/2023/09/23/%E6%85%95%E6%97%AD%E4%B8%9C/" class="trm-anima-link">
+                    慕旭东
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>23/09/23</li>
+                <li>12:58</li>
+                
+                
+            </ul>
+        </div>
     </div>
-  </div>
-
-
-  
+</div>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2023/09/23/hello-world/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+            
+        </a>
         
-          <li>
-            <a href="/2023/09/23/kubernetes%E6%8A%80%E5%B7%A7%E5%8F%8A%E7%9F%A5%E8%AF%86%E7%B3%BB%E7%BB%9F/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/23/%E6%85%95%E6%97%AD%E4%B8%9C/">慕旭东</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/23/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    未分类
+                </a>
+            </div>
+            <h5>
+                <a href="/2023/09/23/hello-world/" class="trm-anima-link">
+                    Hello World
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>23/09/23</li>
+                <li>12:04</li>
+                
+                
+            </ul>
+        </div>
     </div>
-  </div>
+</div>
+    
+</div>
+<!-- newest publications end -->
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+
+    <div class="trm-pagination">
+        <span class="page-number current">1</span>
     </div>
-  </div>
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-scroll-animation">
+
+    
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>
+                由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v6.3.0
+            </span>
+            <span class="footer-separator" data-separator=" | "></span>
+            <span> 
+                主题 - 
+                <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
+                v2.1.1
+            </span>
+        </div>
+      
+
+     
+
+     
 </footer>
+ 
+                    <!-- footer end -->
 
+                </div>
+            </div>
+        </div>
     </div>
-    <nav id="mobile-nav">
+</div>
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
   
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+  <!-- Plugin -->
+
+
+
+
+    
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
     
 
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+
+<!-- CDN -->
 
 
+    
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    
 
-
-
-
-<script src="/js/script.js"></script>
+    
 
 
 
 
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
 
-  </div>
+
+<script id="async-script" src="/js/main.js?v=2.1.1"></script>
+
 </body>
+
 </html>
